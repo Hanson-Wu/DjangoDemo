@@ -6,8 +6,14 @@ from rest_framework import status
 from .serializer import StockSerializer
 from .models import Stock
 from django.http import HttpResponse
-# Create your views here.
 
+
+# Create your views here.
+from django.http import HttpResponse
+
+
+def index(request):
+	return HttpResponse(u"Welcom!")
 # list and create
 class StockList(APIView):
 	def get(self, request):
@@ -17,5 +23,5 @@ class StockList(APIView):
 	def post(self):
 		pass
 
-def hello(request):
-    return HttpResponse("Hello world")
+
+

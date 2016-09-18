@@ -6,3 +6,4 @@ class StockSerializer(serializers.ModelSerializer):
 		model = Stock
 		#fields = ('ticker', 'volumn')
 		fields = '__all__'
+
