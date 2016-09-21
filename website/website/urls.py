@@ -19,6 +19,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from django.views.generic import TemplateView
 from apidemo import views
 from django.conf.urls.static import static
+from django.conf import settings
 
 
 
@@ -29,7 +30,11 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^stocks/', views.StockList.as_view()),
 	url(r'^music/', include('music.urls')),
-	#url(r'^abc/', views.ABCList.as_view()),cd
+	url(r'^', include('music.urls')),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
