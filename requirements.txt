@@ -12,7 +12,7 @@ dateutils==0.6.6
 decorator==4.0.9
 Django==1.10
 django-contrib-comments==1.7.2
-djangorestframework==3.4.4
+djangorestframework==3.9.1
 EasyProcess==0.2.2
 feedparser==5.2.1
 filebrowser-safe==0.4.5
