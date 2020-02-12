@@ -10,7 +10,7 @@ cycler==0.10.0
 Cython==0.23.4
 dateutils==0.6.6
 decorator==4.0.9
-Django==1.10
+Django==1.11.28
 django-contrib-comments==1.7.2
 djangorestframework==3.4.4
 EasyProcess==0.2.2
