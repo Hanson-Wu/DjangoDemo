@@ -2,7 +2,7 @@ backports-abc==0.4
 backports.ssl-match-hostname==3.5.0.1
 beautifulsoup4==4.5.1
 bleach==1.4.3
-certifi==2015.11.20.1
+certifi==2022.12.7
 chardet==2.3.0
 colorlover==0.2.1
 cufflinks==0.7.2
